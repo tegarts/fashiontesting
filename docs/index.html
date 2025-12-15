@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1" style="width: 1080px; height: 1920px; background: #231F20"></canvas>
-    <script src="Build/Fashing Test4.loader.js"></script>
+    <script src="Build/Fashion Test4.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -27,9 +27,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Fashing Test4.data",
-        frameworkUrl: "Build/Fashing Test4.framework.js",
-        codeUrl: "Build/Fashing Test4.wasm",
+        dataUrl: "Build/Fashion Test4.data",
+        frameworkUrl: "Build/Fashion Test4.framework.js",
+        codeUrl: "Build/Fashion Test4.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "testing-fashion",
@@ -41,8 +41,9 @@
         alert(message);
       });
     </script>
+  </body>
 
-    <script type="module">
+  <script type="module">
 
     // Import the functions you need from the SDKs you need
 
@@ -79,5 +80,4 @@
     const app = initializeApp(firebaseConfig);
 
   </script>
-  </body>
 </html>
