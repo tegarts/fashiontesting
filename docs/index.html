@@ -7,11 +7,9 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1" style="width: 1080px; height: 1920px; background: #231F20"></canvas>
-    
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database-compat.js"></script>
-
-    <script src="Build/Fashion Test7.loader.js"></script>
+    <script src="Build/Fashion Test8.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -31,9 +29,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Fashion Test7.data",
-        frameworkUrl: "Build/Fashion Test7.framework.js",
-        codeUrl: "Build/Fashion Test7.wasm",
+        dataUrl: "Build/Fashion Test8.data",
+        frameworkUrl: "Build/Fashion Test8.framework.js",
+        codeUrl: "Build/Fashion Test8.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "testing-fashion",
@@ -41,7 +39,7 @@
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       }).then((unityInstance) => {
-        window.unityInstance = unityInstance;
+          window.unityInstance = unityInstance;
 
         const firebaseConfig = {
 
@@ -61,6 +59,8 @@
 
         };
       const app = firebase.initializeApp(firebaseConfig);
+
+      unityInstance.SendMessage("Main Camera", "FirebaseReady", "Success");
       }).catch((message) => {
         alert(message);
       });
