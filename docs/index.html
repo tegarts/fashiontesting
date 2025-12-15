@@ -7,6 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1" style="width: 1080px; height: 1920px; background: #231F20"></canvas>
+    
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database-compat.js"></script>
 
@@ -33,7 +34,8 @@
       firebase.initializeApp(firebaseConfig);
 
     </script>
-    <script src="Build/Fashion Test5.loader.js"></script>
+
+    <script src="Build/Fashion Test6.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -53,9 +55,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Fashion Test5.data",
-        frameworkUrl: "Build/Fashion Test5.framework.js",
-        codeUrl: "Build/Fashion Test5.wasm",
+        dataUrl: "Build/Fashion Test6.data",
+        frameworkUrl: "Build/Fashion Test6.framework.js",
+        codeUrl: "Build/Fashion Test6.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "testing-fashion",
