@@ -11,30 +11,6 @@
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database-compat.js"></script>
 
-    <script>
-      // Your web app's Firebase configuration
-
-      const firebaseConfig = {
-
-        apiKey: "AIzaSyBzyF39OIpNsC6nkJ7UyyRzg5Haa8hbPIc",
-
-        authDomain: "testing-bb2b9.firebaseapp.com",
-
-        databaseURL: "https://testing-bb2b9-default-rtdb.asia-southeast1.firebasedatabase.app",
-
-        projectId: "testing-bb2b9",
-
-        storageBucket: "testing-bb2b9.firebasestorage.app",
-
-        messagingSenderId: "451298592740",
-
-        appId: "1:451298592740:web:2ee63aba4058b6d803e9f1"
-
-      };
-      const app = firebase.initializeApp(firebaseConfig);
-
-    </script>
-
     <script src="Build/Fashion Test7.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -66,6 +42,25 @@
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       }).then((unityInstance) => {
         window.unityInstance = unityInstance;
+
+        const firebaseConfig = {
+
+          apiKey: "AIzaSyBzyF39OIpNsC6nkJ7UyyRzg5Haa8hbPIc",
+
+          authDomain: "testing-bb2b9.firebaseapp.com",
+
+          databaseURL: "https://testing-bb2b9-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+          projectId: "testing-bb2b9",
+
+          storageBucket: "testing-bb2b9.firebasestorage.app",
+
+          messagingSenderId: "451298592740",
+
+          appId: "1:451298592740:web:2ee63aba4058b6d803e9f1"
+
+        };
+      const app = firebase.initializeApp(firebaseConfig);
       }).catch((message) => {
         alert(message);
       });
